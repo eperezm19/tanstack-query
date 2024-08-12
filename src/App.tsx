@@ -1,11 +1,13 @@
-import "./App.css";
-import CryptoContainer from "./modules/crypto-random/components/crypto-container";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <CryptoContainer />
-    </>
+    <div className="container m-auto max-w-7xl mt-3">
+      <h1>
+        Git Issues <small>Seguimiento de problemas</small>
+      </h1>
+      <Outlet />
+    </div>
   );
 }
 
